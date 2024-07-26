@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class NumParImpar {
@@ -6,7 +7,7 @@ public class NumParImpar {
         Scanner teclado = new Scanner(System.in);
         int[] numeros = new int[10];
 
-        System.out.println("Ingresa 10 numeros:");
+        System.out.println("Ingresa 10 números:");
 
         for (int i = 0; i < 10; i++) {
             numeros[i] = teclado.nextInt();
@@ -23,8 +24,8 @@ public class NumParImpar {
             }
         }
 
-        System.out.println("Numeros pares: " + pares);
-        System.out.println("Numeros impares: " + impares);
+        System.out.println("Los números ingresados son: " + Arrays.toString(numeros));
+        System.out.println("Números pares: " + pares);
+        System.out.println("Números impares: " + impares);
     }
 }
-
